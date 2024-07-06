@@ -1,0 +1,164 @@
+:root{
+    --main-color: #32353A;
+    --main-font: "Comfortaa", sans-serif;
+    --second-font: "Nerko One", cursive;
+}
+/* Start Navbar code */
+
+
+
+/* Change the background color of the navbar when it is collapsed */
+.navbar-collapse {
+    background-color:#3A497B; /* Change to your preferred color */
+    width: inherit;
+    overflow: hidden;
+    z-index: 9999;
+    transition: all 0.4s;
+}
+
+/* Change the color of the toggle button */
+.navbar-toggler {
+    border-color: #fff; /* Change to your preferred color */
+}
+
+/* Change the color of the toggle icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Change to your preferred icon */
+}
+
+/* Style the links in the collapsed navbar */
+.navbar-collapse .nav-link {
+    color: #fff; /* Change to your preferred color */
+}
+
+/* Add padding to the collapsed navbar */
+.navbar-collapse {
+    padding: 10px;
+}
+
+
+
+
+
+.container{
+    margin-top: 20%;
+}
+.navbar {
+    height: 8.5vh;
+    font-family: "Comfortaa", sans-serif;
+font-weight: 700;
+}
+.navbar img{
+    width: 80px;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    padding: 0 !important;
+    margin: 0 !important;
+    object-fit: contain I !important;
+}
+body {
+    background-image: url(/Images/wraper.png);
+    background-repeat: no-repeat;
+    background-color: var(--main-color);
+}
+.navbar {
+    background-color: #3A497B  !important;
+}
+.container a {
+    color: white;
+}
+/* Start section Cards */
+
+#Cards h5{
+    font-family: "Nerko One", cursive;
+}
+#Cards img {
+    opacity: 0.7;
+    transition: all 0.5s;
+
+}
+#Cards .card{
+    margin-top: 20px;
+    background-color: var(--main-color) !important;
+ color: white;
+ position: relative;
+ transition: all 0.5s;
+}
+#Cards span {
+    font-family: var(--main-font) ;
+    font-weight: 900;
+    font-size: 10.5px;
+    border: black solid 2px;
+    background-color: #4b535d;
+    border-radius:20px ;
+    padding: 5px;
+    height: 3.3vh;
+}
+#Cards .card::after {
+    content: "";
+    width: 100%;
+    height: 1px; /* Set height to make the pseudo-element visible */
+    background-color: rgb(78, 75, 75); /* Use background-color instead of color */
+    position: absolute;
+    bottom: 12%; /* Position the line 10% above the bottom of the card */
+    left: 50%;
+    transform: translateX(-50%); 
+    /* Center the line horizontally */
+}
+#Cards .card:hover img{
+    opacity: 1;
+}
+#Cards .card:hover{
+    transform: scale(1.05);
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4.5em; /* Adjust height based on your line height */
+    line-height: 1.5em; /* Adjust line height to your preference */
+}
+
+/* Start Details Section */
+#Details{
+    background-color: #27282B;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 100px;
+}
+#Details .col-md-8{
+    font-family: var(--main-font);
+
+}
+#Details h1 {
+    font-weight: 500;
+    position: relative;
+
+}
+#Details .col-md-8 p{
+    display: -webkit-box;
+    -webkit-line-clamp : 14; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 21em; /* Adjust height based on your line height */
+    line-height: 1.5em; /* Adjust line height to your preference */
+}
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000; /* Ensure it is above other content */
+    font-size: 3em; /* Size of the spinner */
+    color: #007bff; /* Color of the spinner */
+}
+.d-none {
+    display: none;
+}
